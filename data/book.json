@@ -1,0 +1,33 @@
+[
+    {   
+        "judul": "Information Systems for Business and Beyond", 
+        "penulis": "David T. Bourgeois (LibreTexts)", 
+        "tahun": "2022", 
+        "kategori": "Sistem Informasi",
+        "cover": "assets/img/coverDavid.png" 
+    },
+
+    {
+        "judul": "Modern Information Systems", 
+        "penulis": "Christos Kalloniatis", 
+        "tahun": "2012", 
+        "kategori": "Sistem Informasi",
+        "cover": "assets/img/coverChristos.png"
+    },
+    
+    {
+        "judul": "Business Information Systems", 
+        "penulis": "Elizabeth Hardcastle", 
+        "tahun": "2011", 
+        "kategori": "Sistem Informasi",
+        "cover": "assets/img/coverElizabeth.png"
+    },
+
+    {
+        "judul": "Test", 
+        "penulis": "Johan Setiawan", 
+        "tahun": "2025", 
+        "kategori": "Sistem Informasi",
+        "cover": "assets/img/coverJohn.png"
+    }
+]

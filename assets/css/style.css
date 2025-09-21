@@ -1,0 +1,278 @@
+body {
+    background-color: #d0d8ef;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+:root {
+    --main-color: #00167b;
+    --Secondary-color: #A07856;
+    --background-color: #B7C3E8;
+    --accent-color: white;
+    --shadow-color: #abc1e9;
+    --text-color:#303030;
+    --login-hover-color: #9bb0d9;
+    --navigation-hover-color: #9bb0d9;
+    --heading-color: #00167b;
+    --box-shadow-color: #9bb0d9;
+    --Sign-up-color: rgb(62, 62, 211);
+}
+
+.darkmode {
+    --main-color: #00167b;
+    --Secondary-color: #A07856;
+    --background-color: #303030;
+    --accent-color: #144594;
+    --shadow-color: #202020;
+    --text-color: #E0E0E0;
+    --login-hover-color: #606060;
+    --navigation-hover-color: #606060;
+    --heading-color: #E0E0E0;
+    --box-shadow-color: #E0E0E0;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../font/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'DIN';
+    src: url('../font/DIN-Next-LT-Arabic.ttf');
+}
+
+.nav-bg {
+    background-color: var(--accent-color);
+    position: fixed;
+    top: 0;
+    left: -15px;
+    width: 110%;
+    height: 70px;
+    box-shadow: 0 1px 5px black; /*0 Blur, 1px Vertical offset, 20px blur radius, color black*/
+}
+
+.nav-logo {
+    background-image: url("assets/");
+    background-repeat: no-repeat;
+    background-size: contain; /*Memastikan image tertampil seluruhnya tanpa terpotong*/
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    left: 8px;
+    top: -8px;
+}
+
+ul {
+    list-style-type: none; 
+    position: fixed;
+}
+
+nav {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    position: fixed;
+    left: 19em;
+    top: 20px;
+}
+
+nav ul {
+    text-decoration: none;
+    padding-left: 0;
+    marker: none;
+}
+
+nav ul li {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 80px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: var(--navigation-hover-color);
+}
+
+h2 {
+    font-family: 'DIN';
+    font-size: 30px;
+    top: 10px;
+    position: fixed;
+    margin: 0 20px;
+}
+
+h2 a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+.login-button {
+    font-family: 'Poppins';
+    color: white;
+    background-color: rgb(62, 62, 211);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 3px 5px var(--box-shadow-color);
+    position: fixed;
+    width: 5em;
+    height: 40px;
+    right: 30px;
+    top: 14px;
+}
+
+.login-button:hover {
+    transform: translateY(-3px); /*naik 3px */
+    box-shadow: 5px 5px 10px #9bb0d9;
+}
+
+.signup-button {
+    font-family: 'Poppins';
+    background-color: white;
+    border-radius: 5px;
+    border: none;  
+    box-shadow: 3px 3px 5px var(--box-shadow-color);
+    border: none;
+    position: fixed;
+    width: 5em;
+    height: 40px;
+    right: 115px;
+    top: 14px;
+}
+
+.signup-button:hover {
+    transform: translateY(-3px); /*naik 3px */
+    box-shadow: 5px 5px 10px #9bb0d9;
+}
+
+/* for dark mode toggle button */   
+#Theme-toggle {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(62, 62, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    z-index: 9999;
+}
+
+#Theme-toggle:hover {
+    transform: translateY(-3px); /*naik 3px */
+    box-shadow: 5px 5px 10px #9bb0d9;
+}
+
+#Theme-toggle svg {
+    fill: var(--accent-color)
+}
+
+#Theme-toggle svg:last-child {
+    display: none;
+}
+
+.darkmode #Theme-toggle svg:first-child {
+    display: none;
+}
+
+.darkmode #Theme-toggle svg:last-child {
+    display: block;
+}
+
+h1 {
+    font-family: 'DIN';
+    font-size: 80px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 40px auto 40px;
+    color: black;
+}
+
+.content-container {
+    padding-top: 80px; /* Space for fixed navbar */
+    padding-bottom: 50px;
+    overflow-y: auto;
+    min-height: calc(100vh - 70px); /* Full height minus navbar */
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-text {
+    color: var(--text-color);
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.input {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+}
+
+input:focus {
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+}
+
+input:hover {
+    outline: 1px solid lightgrey;
+}
