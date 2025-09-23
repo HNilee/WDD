@@ -1,5 +1,5 @@
 body {
-    background-color: #d0d8ef;
+    background-color: black;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -53,7 +53,8 @@ body {
     left: -15px;
     width: 110%;
     height: 70px;
-    box-shadow: 0 1px 5px black; /*0 Blur, 1px Vertical offset, 20px blur radius, color black*/
+    box-shadow: 0 1px 5px black;
+    z-index: 1000;
 }
 
 .nav-logo {
@@ -80,6 +81,7 @@ nav {
     position: fixed;
     left: 19em;
     top: 20px;
+    z-index: 1000;
 }
 
 nav ul {
@@ -110,6 +112,7 @@ h2 {
     top: 10px;
     position: fixed;
     margin: 0 20px;
+    z-index: 1000;
 }
 
 h2 a {
@@ -202,13 +205,15 @@ h1 {
     text-align: center;
     margin: 40px auto 40px;
     color: black;
+    z-index: 0;
 }
 
 .content-container {
-    padding-top: 80px; /* Space for fixed navbar */
+    padding-top: 80px;
     padding-bottom: 50px;
     overflow-y: auto;
-    min-height: calc(100vh - 70px); /* Full height minus navbar */
+    min-height: calc(100vh - 70px);
+    z-index: 0;
 }
 
 .card-container {
@@ -219,6 +224,7 @@ h1 {
     width: 100%;
     padding: 0 50px;
     flex-wrap: wrap;
+    z-index: 0;
 }
 
 .card {
@@ -228,6 +234,7 @@ h1 {
     overflow: hidden;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 0;
 }
 
 .card:hover {
@@ -239,10 +246,12 @@ h1 {
     width: 100%;
     height: auto;
     object-fit: cover;
+    z-index: 0;
 }
 
 .card-body {
     padding: 1.25rem;
+    z-index: 0;
 }
 
 .card-text {
@@ -250,6 +259,7 @@ h1 {
     font-family: 'Poppins';
     font-size: 14px;
     line-height: 1.5;
+    z-index: 0
 }
 
 .input {
@@ -266,6 +276,7 @@ h1 {
     border: none;
     line-height: 1.15;
     box-shadow: 0px 10px 20px -18px;
+    z-index: 0;
 }
 
 input:focus {
