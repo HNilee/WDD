@@ -1,5 +1,5 @@
 body {
-    background-color: #d0d8ef;
+    background-color: black;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -76,11 +76,14 @@ nav {
     left: 19em;
     top: 20px;
     z-index: 1000;
+<<<<<<< HEAD
 }
 
 .nav-menu a {
     text-decoration: none;
     color: black; 
+=======
+>>>>>>> 793b4a1e4d7cfdc1956b93f4b31e080991050aac
 }
 
 nav ul {
@@ -206,11 +209,14 @@ h1 {
     margin: 40px auto 40px;
     color: black;
     z-index: 0;
+<<<<<<< HEAD
 }
 
 .home-h1 {
     color: white;
     opacity: 80%;
+=======
+>>>>>>> 793b4a1e4d7cfdc1956b93f4b31e080991050aac
 }
 
 .content-container {
@@ -218,6 +224,10 @@ h1 {
     padding-bottom: 50px;
     overflow-y: auto;
     min-height: calc(100vh - 70px);
+<<<<<<< HEAD
+=======
+    z-index: 0;
+>>>>>>> 793b4a1e4d7cfdc1956b93f4b31e080991050aac
 }
 
 .card-container {
@@ -228,6 +238,7 @@ h1 {
     width: 100%;
     padding: 0 50px;
     flex-wrap: wrap;
+    z-index: 0;
 }
 
 .card {
@@ -237,6 +248,7 @@ h1 {
     overflow: hidden;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 0;
 }
 
 .card:hover {
@@ -248,11 +260,16 @@ h1 {
     width: 100%;
     height: auto;
     object-fit: cover;
+    z-index: 0;
 }
 
 .card-body {
     padding: 1.25rem;
+<<<<<<< HEAD
     z-index: 1000;
+=======
+    z-index: 0;
+>>>>>>> 793b4a1e4d7cfdc1956b93f4b31e080991050aac
 }
 
 .card-text {
@@ -260,6 +277,7 @@ h1 {
     font-family: 'Poppins';
     font-size: 14px;
     line-height: 1.5;
+    z-index: 0
 }
 
 .input {
@@ -277,6 +295,7 @@ h1 {
     outline: none;
     border: none;
     box-shadow: 0px 10px 20px -18px;
+    z-index: 0;
 }
 
 input:focus {

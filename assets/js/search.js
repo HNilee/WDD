@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function() { //Menunggu kode HTML rendering untuk mengimplementasikan JS ini berjalan
     let books = [];
 
     //Mengambil data dari JSON
@@ -6,6 +6,7 @@ $(document).ready(function() {
         console.log("Books loaded:", data);
         books = data;
         displayBooks(books); //Menampilkan seluruh buku
+        
     }).fail(function(jqxhr, textStatus, error) {
         console.error("Error loading books:", textStatus, error);
     });
@@ -33,7 +34,7 @@ $(document).ready(function() {
     // Memunculkan isi buku sebagai card
     function displayBooks(booksToDisplay) {
         let cardContainer = $("#bookContainer");
-        cardContainer.empty(); 
+        cardContainer.empty();
         
         //No books found
         if (booksToDisplay.length === 0) {
@@ -44,16 +45,16 @@ $(document).ready(function() {
         //Template card untuk setiap data buku
         booksToDisplay.forEach(book => {
             let card = `
-                <div class="card" style="width: 18rem;">
-                    <img src="${book.cover}" class="card-img-top" alt="${book.judul}">
-                    <div class="card-body">
-                        <h5 class="card-title">${book.judul}</h5>
-                        <p class="card-text">
-                            <strong>Author:</strong> ${book.penulis}<br>
-                            <strong>Year:</strong> ${book.tahun}<br>
-                            <strong>Category:</strong> ${book.kategori}
-                        </p>
-                    </div>
+            <div class="card" style="width: 18rem;">
+                <img src="${book.cover}" class="card-img-top" alt="${book.judul}">
+                <div class="card-body">
+                    <h5 class="card-title">${book.judul}</h5>
+                    <p class="card-text">
+                        <strong>Author:</strong> ${book.penulis}<br>
+                        <strong>Year:</strong> ${book.tahun}<br>
+                        <strong>Category:</strong> ${book.kategori}
+                    </p>
+                </div>
                 </div>
             `;
             cardContainer.append(card);
