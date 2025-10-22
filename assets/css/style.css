@@ -220,7 +220,10 @@ h1 {
     padding-bottom: 50px;
     overflow-y: auto;
     min-height: calc(100vh - 70px);
+<<<<<<< HEAD
     z-index: 0;
+=======
+>>>>>>> 987c6a570f6d8d3189a1dee81434e4ac1d02dfd5
 }
 
 .card-container {
@@ -259,8 +262,11 @@ h1 {
 .card-body {
     padding: 1.25rem;
     z-index: 1000;
+<<<<<<< HEAD
     z-index: 0;
     z-index: 1000;
+=======
+>>>>>>> 987c6a570f6d8d3189a1dee81434e4ac1d02dfd5
 }
 
 .card-text {
