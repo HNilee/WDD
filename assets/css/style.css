@@ -76,14 +76,11 @@ nav {
     left: 19em;
     top: 20px;
     z-index: 1000;
-<<<<<<< HEAD
 }
 
 .nav-menu a {
     text-decoration: none;
     color: black; 
-=======
->>>>>>> 793b4a1e4d7cfdc1956b93f4b31e080991050aac
 }
 
 nav ul {
@@ -115,6 +112,8 @@ h2 {
     position: fixed;
     margin: 0 20px;
     z-index: 1000;
+    transform: none;  
+    transition: none;  
 }
 
 h2 a {
@@ -209,14 +208,11 @@ h1 {
     margin: 40px auto 40px;
     color: black;
     z-index: 0;
-<<<<<<< HEAD
 }
 
 .home-h1 {
     color: white;
     opacity: 80%;
-=======
->>>>>>> 793b4a1e4d7cfdc1956b93f4b31e080991050aac
 }
 
 .content-container {
@@ -224,10 +220,7 @@ h1 {
     padding-bottom: 50px;
     overflow-y: auto;
     min-height: calc(100vh - 70px);
-<<<<<<< HEAD
-=======
     z-index: 0;
->>>>>>> 793b4a1e4d7cfdc1956b93f4b31e080991050aac
 }
 
 .card-container {
@@ -265,11 +258,9 @@ h1 {
 
 .card-body {
     padding: 1.25rem;
-<<<<<<< HEAD
     z-index: 1000;
-=======
     z-index: 0;
->>>>>>> 793b4a1e4d7cfdc1956b93f4b31e080991050aac
+    z-index: 1000;
 }
 
 .card-text {
