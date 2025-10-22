@@ -53,23 +53,18 @@ body {
     left: -15px;
     width: 110%;
     height: 70px;
-    box-shadow: 0 1px 5px black; /*0 Blur, 1px Vertical offset, 20px blur radius, color black*/
+    box-shadow: 0 1px 5px black;
+    z-index: 1000;
 }
 
-.nav-logo {
-    background-image: url("assets/");
-    background-repeat: no-repeat;
-    background-size: contain; /*Memastikan image tertampil seluruhnya tanpa terpotong*/
+.home-bgvid {
     position: fixed;
-    width: 80px;
-    height: 80px;
-    left: 8px;
-    top: -8px;
-}
-
-ul {
-    list-style-type: none; 
-    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 nav {
@@ -80,6 +75,12 @@ nav {
     position: fixed;
     left: 19em;
     top: 20px;
+    z-index: 1000;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black; 
 }
 
 nav ul {
@@ -110,6 +111,9 @@ h2 {
     top: 10px;
     position: fixed;
     margin: 0 20px;
+    z-index: 1000;
+    transform: none;  
+    transition: none;  
 }
 
 h2 a {
@@ -130,10 +134,11 @@ h2 a {
     height: 40px;
     right: 30px;
     top: 14px;
+    z-index: 1000;
 }
 
 .login-button:hover {
-    transform: translateY(-3px); /*naik 3px */
+    transform: translateY(-3px);
     box-shadow: 5px 5px 10px #9bb0d9;
 }
 
@@ -149,14 +154,14 @@ h2 a {
     height: 40px;
     right: 115px;
     top: 14px;
+    z-index: 1000;
 }
 
 .signup-button:hover {
-    transform: translateY(-3px); /*naik 3px */
+    transform: translateY(-3px); 
     box-shadow: 5px 5px 10px #9bb0d9;
 }
 
-/* for dark mode toggle button */   
 #Theme-toggle {
     height: 50px;
     width: 50px;
@@ -174,7 +179,7 @@ h2 a {
 }
 
 #Theme-toggle:hover {
-    transform: translateY(-3px); /*naik 3px */
+    transform: translateY(-3px);
     box-shadow: 5px 5px 10px #9bb0d9;
 }
 
@@ -202,13 +207,19 @@ h1 {
     text-align: center;
     margin: 40px auto 40px;
     color: black;
+    z-index: 0;
+}
+
+.home-h1 {
+    color: white;
+    opacity: 80%;
 }
 
 .content-container {
-    padding-top: 80px; /* Space for fixed navbar */
+    padding-top: 80px;
     padding-bottom: 50px;
     overflow-y: auto;
-    min-height: calc(100vh - 70px); /* Full height minus navbar */
+    min-height: calc(100vh - 70px);
 }
 
 .card-container {
@@ -243,6 +254,7 @@ h1 {
 
 .card-body {
     padding: 1.25rem;
+    z-index: 1000;
 }
 
 .card-text {
@@ -253,18 +265,19 @@ h1 {
 }
 
 .input {
+    left: 38em;
+    bottom: 16em;
     position: relative;
     display: block;
     margin: 20px auto;
     max-width: 200px;
     background-color: #f5f5f5;
     color: #242424;
-    padding: .15rem .5rem;
+    padding: .5rem;
     min-height: 40px;
     border-radius: 4px;
     outline: none;
     border: none;
-    line-height: 1.15;
     box-shadow: 0px 10px 20px -18px;
 }
 
@@ -275,4 +288,22 @@ input:focus {
 
 input:hover {
     outline: 1px solid lightgrey;
+}
+
+hr.color {
+    background-color: white;
+}
+
+footer {
+    z-index: 1000;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    z-index: 1000;
+}
+
+ul li a:hover {
+    text-decoration: none;
 }

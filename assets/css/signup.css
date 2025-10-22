@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("../font/Poppins-Regular.ttf");
+}
+
+body {
+    background-color: #d0d8ef;
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-container {
+    background: white;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+h2 {
+    color: #00167b;
+    margin-bottom: 25px;
+    font-family: 'Poppins';
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s;
+    font-family: 'Poppins';
+}
+
+.input:focus {
+    border-color: #00167b;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #00167b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    font-family: 'Poppins';
+}
+
+.submit-btn:hover {
+    background-color: #2b3fc7;
+    transform: translateY(-2px);
+}

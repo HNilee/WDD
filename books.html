@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="icon" href="assets/img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <script type="text/javascript" src="assets/js/theme.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -23,18 +23,18 @@
         <div class="nav-bg"></div>
 
         <a href="login.html">
-            <button class="login-button">Login</button>
+            <button class="login-button">Login</button> <!-- button untuk log in  -->
         </a>
 
-        <a href="signup.html">
-            <button class="signup-button">Sign up</button>
+        <a href="signup.php">
+            <button class="signup-button">Sign up</button> <!-- button untuk sign up  -->
         </a>
 
-        <h2><a href="home.html">Borrow-In</a></h2>
+        <h2><a href="index.html">Borrow-In</a></h2>
 
     <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
+        <ul class="nav-menu"> <!-- bar untuk navigasi -->
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="books.html">Book List</a></li>
             <li><a href="history.html">History</a></li>
@@ -47,7 +47,62 @@
         <input class="input" id="searchInput" name="text" placeholder="Search..." type="search">
 
         <div class="card-container" id="bookContainer">
+    </div>
+    </div>
+
+<footer class="bg-dark text-light pt-5">
+    <div class="container px-5">
+        <div class="row">
+            <div class="col-6 col-md-4">
+                <h3 class="fw-bold">Borrow-In</h3>
+                <p class="pt-2">BorrowIn is a digital library website where individuals can borrow books and read them on their respective websites. BorrowIn can help students and individuals gain knowledge through reading books.</p>
+            </div>
+
+            <div class="col">
+                <h4>About Us</h4>
+                <ul class="list-unstyled pt-2">
+                    <li class="py-1">Who are We?</li>
+                    <li class="py-1">Our Services</li>
+                    <li class="py-1">Privacy Policy</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4>Help</h4>
+                <ul class="list-unstyled pt-2">
+                    <li class="py-1">FAQ</li>
+                    <li class="py-1">Contact Us</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4>Our Contacts</h4>
+                <ul class="list-unstyled pt-2">
+                    <li class="py-1 black">
+                        <a href="http://wa.link/2qtxos">WhatsApp</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="https://mail.google.com/mail/u/0/?fs=1&to=aryapann12@gmail.com&su=YOUR_SUBJECT&body=YOUR_BODY&tf=cm">Gmail</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="https://www.instagram.com/hnile._">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class = "color">
+        <div class="d-sm-flex justify-content-between py-1">
+            <p>Our Social media</p>
+            <a href="#" class="text-light fs-2 me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light fs-2 me-3"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="text-light fs-2 me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light fs-2"><i class="bi bi-linkedin"></i></a>
         </div>
     </div>
+</footer>
+
 </body>
 </html>
+
+<!-- dibuat oleh Kelompok 5 Kelas E mata kuliah WDD -->
